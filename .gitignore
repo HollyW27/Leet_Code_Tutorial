@@ -64,3 +64,7 @@ Temporary Items
 # For rider
 .idea
 .idea\*
+launch
+LeetCode/bin
+LeetCode/obj
+LeetCode/Properties/launchSettings.json
