@@ -1,15 +1,16 @@
 namespace SecondHighestDigit;
-public class Solution 
+
+public class Solution
 {
-    public int SecondHighest(string s) 
+    public int SecondHighest(string s)
     {
         int highest = int.MinValue;
         int second = int.MinValue;
         for (int i = 0; i < s.Length; i++)
         {
-            if(char.IsDigit(s[i]))
+            if (char.IsDigit(s[i]))
             {
-                if(s[i] > highest)
+                if (s[i] > highest)
                 {
                     second = highest;
                     highest = s[i];
@@ -19,12 +20,13 @@ public class Solution
                     second = s[i];
                 }
             }
-            
         }
+
         if (second < -1)
-            {
-                return -1;
-            }
+        {
+            return -1;
+        }
+
         return (int)second - 48;
     }
 }
